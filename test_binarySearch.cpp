@@ -3,7 +3,7 @@
 using namespace std;
 void printFlag(vector<int>& nums,int left, int right)
 {
-    vector<int> tempVec(nums.size(),0);
+    vector<int> tempVec(nums.size()+1,0);
     tempVec[left] = 1;
     tempVec[right] = 2;
     for(int i=0; i<tempVec.size(); ++i)
@@ -29,6 +29,9 @@ int binarySearch(vector<int>& nums, int target)
      * 1.如下条件为左闭右闭区间，搜索范围包括作为边界的本身
      * 2.由于以上区间的情况，其相应的条件处理也要改变，以确
      * 保没有重复和未覆盖到的搜索区间存在
+     * 3.当等于所要寻找的目标数时，接下来的处理是至关重要的，
+     * 它是针对左右边界的搜索的关键，如果是左边界，则搜索区间应该向左逼近
+     * ，即对right进行操作，反之右边界，就对left进行操作
      */
     while(left<=right)//这个结束条件决定了只有当left = right+1是循环结束
     {
