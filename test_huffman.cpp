@@ -41,6 +41,10 @@ public:
         }
     }
     ~hsf(){}
+    static void print_count()
+    {
+        cout<<hsf::count<<endl;
+    }
     void print()
     {
         cout<<">>>>>>>>--------"<<endl;
@@ -89,7 +93,10 @@ public:
     void Trial(int i,int n)
     {
         if( i > n)
+        {
             print();
+            count++;
+        }
         else for(int j = 0;j<=n; ++j)
         {
             arr[i][j]=1;
@@ -106,12 +113,15 @@ private:
     vector<vector<int>> arr;
     int l;
     int w;
+    static int count;
 };
+int hsf::count=0;
 int main()
 {
     //powerSet(1,3);
     hsf q1(8,8);
     q1.Trial(0,7);
+    q1.print_count();
     return 0;
 }
 
