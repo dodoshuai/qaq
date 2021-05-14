@@ -2,6 +2,25 @@
 #include <string>
 using namespace std;
 
+bool readStr(const string& s1,const string& s2)
+{
+    if(s1 == s2)
+        return true;
+    if(s1>s2)
+    {
+        cout<<"s1"<<endl;
+        return true;
+    }
+    else
+    {
+        cout<<"s2"<<endl;
+        return true;
+    }
+    if(s1.size() != s2.size())
+    {
+                
+    }
+}
 int main()
 {
     string s("Hiya!");
