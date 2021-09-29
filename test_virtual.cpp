@@ -40,9 +40,32 @@ void test()
     //q3.print();
     q4.print();
 }
+class A{
+public:
+    virtual ~A()
+    {
+        cout<<"print A"<<endl;   
+    }
+};
+class B : public A{
+    public:
+        ~B()
+        {
+            cout<<"print B"<<endl;
+        }
+};
+void test2()
+{
+    A* a1 = new B();
+    B* b1 = new B();
+    delete a1;
+    cout<<"------------------"<<endl;
+    delete b1;
+}
 int main()
 {
-    test();
+    //test();
+    test2();
     //std::cout << "Hello world" << std::endl;
     return 0;
 }

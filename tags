@@ -1,0 +1,588 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	test_eq.cpp	/^struct A{int x,y;};$/;"	s
+A	test_move1.cpp	/^        A():pointer(new int(1)) { $/;"	f	class:A
+A	test_move1.cpp	/^        A(A& a):pointer(new int(*a.pointer)) { $/;"	f	class:A
+A	test_move1.cpp	/^        A(A&& a):pointer(a.pointer) { $/;"	f	class:A
+A	test_move1.cpp	/^class A {$/;"	c
+B	test_eq.cpp	/^struct B{int x,y;};$/;"	s
+BIN	Makefile	/^BIN             = timer $/;"	m
+Base	test_tem2.cpp	/^    Base() {$/;"	f	class:Base
+Base	test_tem2.cpp	/^    Base(int value) : Base() { \/\/ 委托 Base() 构造函数$/;"	f	class:Base
+Base	test_tem2.cpp	/^class Base {$/;"	c
+BigInt_test	BigInt_test.h	/^    BigInt_test():value(""),flag(true) {}$/;"	f	class:BigInt_test
+BigInt_test	BigInt_test.h	/^    BigInt_test(string s):value(s),flag((s[0] == 1)?false:true) {}$/;"	f	class:BigInt_test
+BigInt_test	BigInt_test.h	/^class BigInt_test$/;"	c
+CXX	Makefile	/^CXX             = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS        = $(CXXINC) -std=c++11 -O3 -Wall$/;"	m
+CXXINC	Makefile	/^CXXINC          = $/;"	m
+ClearList	test_Node.cpp	/^Status ClearList(LinkList *L)$/;"	f
+CompareType	BigInt_test.h	/^typedef int CompareType;$/;"	t
+Complex	test_op.cpp	/^    Complex( double r=0, double i=0 ):real(r),imag(i){ };$/;"	f	class:Complex
+Complex	test_op.cpp	/^class Complex$/;"	c
+Component	test_StaticLinkList.cpp	/^} Component,StaticLinkList[MAXSIZE];$/;"	t	typeref:struct:__anon2
+Create	test_timer.cpp	/^    static printer* Create(){$/;"	f	class:printer
+Create	test_timer2.cpp	/^    static printer2* Create(boost::asio::io_service &io){$/;"	f	class:printer2
+Create	timer.h	/^    static timer* Create(boost::asio::io_service &io, int ms_num = 500){$/;"	f	class:timer
+CreateListHead	test_Node.cpp	/^void CreateListHead(LinkList *L, int n)$/;"	f
+CreateListTail	test_Node.cpp	/^void CreateListTail(LinkList *L, int n)$/;"	f
+DuLinkList	test_DuLinkList.cpp	/^} DulNode, *DuLinkList;$/;"	t	typeref:struct:DulNode
+DulNode	test_DuLinkList.cpp	/^typedef struct DulNode$/;"	s
+DulNode	test_DuLinkList.cpp	/^} DulNode, *DuLinkList;$/;"	t	typeref:struct:DulNode
+ERROR	test_DuLinkList.cpp	5;"	d
+ERROR	test_Node.cpp	5;"	d
+ERROR	test_StaticLinkList.cpp	6;"	d
+ERROR	test_elemtype.cpp	7;"	d
+ERROR	test_sqstack.cpp	5;"	d
+ElemType	test_DuLinkList.cpp	/^typedef int ElemType;$/;"	t
+ElemType	test_Node.cpp	/^typedef int ElemType;$/;"	t
+ElemType	test_StaticLinkList.cpp	/^typedef int ElemType;$/;"	t
+ElemType	test_elemtype.cpp	/^typedef int ElemType;$/;"	t
+ElemType	test_sqstack.cpp	/^typedef int ElemType;$/;"	t
+Elemtype	test_timer_l.cpp	/^typedef int Elemtype;$/;"	t
+FALSE	test_DuLinkList.cpp	7;"	d
+FALSE	test_Node.cpp	7;"	d
+FALSE	test_StaticLinkList.cpp	8;"	d
+FALSE	test_elemtype.cpp	9;"	d
+FALSE	test_sqstack.cpp	7;"	d
+Free_SSL	test_StaticLinkList.cpp	/^void Free_SSL(StaticLinkList space, int k)$/;"	f
+GetElem	test_Node.cpp	/^Status GetElem(LinkList L, int i, ElemType *e)$/;"	f
+GetElem	test_elemtype.cpp	/^Status GetElem(SqList *L, int i, ElemType *e)$/;"	f
+Handle	test_Handle.cpp	/^        Handle(T *p = 0): ptr(p), use(new size_t(1)){}$/;"	f	class:Handle
+Handle	test_Handle.cpp	/^        Handle(const Handle& h):ptr(h.ptr),use(h.use){$/;"	f	class:Handle
+Handle	test_Handle.cpp	/^class Handle {$/;"	c
+Handle	test_handle.cpp	/^template <class T> class Handle{$/;"	c
+ID	test_107.cpp	/^    string ID;$/;"	m	class:student
+Index_KMP	test_KMP.cpp	/^int Index_KMP(string s, string T, int pos)$/;"	f
+InitList	test_StaticLinkList.cpp	/^Status InitList(StaticLinkList space)$/;"	f
+InitStack	test_sqstack.cpp	/^Status InitStack(SqStack *S)$/;"	f
+Integral	test_zh.cpp	/^    Integral(int i=0):val(i)$/;"	f	class:Integral
+Integral	test_zh.cpp	/^class Integral{$/;"	c
+LINK	Makefile	/^LINK 			= \/home\/ys\/tools\/boost_1_76_0$/;"	m
+LINKOBJ	Makefile	/^LINKOBJ         = -pthread -lboost_system$/;"	m
+LinkList	test_Node.cpp	/^typedef struct Node *LinkList;$/;"	t	typeref:struct:Node
+ListDelete	test_Node.cpp	/^Status ListDelete(LinkList *L ,int i, ElemType *e)$/;"	f
+ListDelete	test_StaticLinkList.cpp	/^Status ListDelete(StaticLinkList L, int i)$/;"	f
+ListDelete	test_elemtype.cpp	/^Status ListDelete(SqList *L, int i, ElemType *e)$/;"	f
+ListInit	test_Node.cpp	/^Status ListInit(LinkList L)$/;"	f
+ListInit	test_elemtype.cpp	/^Status ListInit(SqList *L)$/;"	f
+ListInsert	test_Node.cpp	/^Status ListInsert(LinkList *L, int i, ElemType e)$/;"	f
+ListInsert	test_StaticLinkList.cpp	/^Status ListInsert(StaticLinkList L, int i , ElemType e)$/;"	f
+ListInsert	test_elemtype.cpp	/^Status ListInsert(SqList *L, int i, ElemType e)$/;"	f
+ListLength	test_Node.cpp	/^Status ListLength(LinkList *L,int *len)$/;"	f
+ListLength	test_StaticLinkList.cpp	/^int ListLength(StaticLinkList L)$/;"	f
+ListPrint	test_Node.cpp	/^Status ListPrint(LinkList *L)$/;"	f
+ListPrint	test_StaticLinkList.cpp	/^void ListPrint(StaticLinkList L)$/;"	f
+ListPrint	test_elemtype.cpp	/^Status ListPrint(SqList *s)$/;"	f
+ListPrintCur	test_StaticLinkList.cpp	/^void ListPrintCur(StaticLinkList L)$/;"	f
+MAXSIZE	test_DuLinkList.cpp	3;"	d
+MAXSIZE	test_Node.cpp	3;"	d
+MAXSIZE	test_StaticLinkList.cpp	4;"	d
+MAXSIZE	test_elemtype.cpp	5;"	d
+MAXSIZE	test_sqstack.cpp	3;"	d
+Malloc_SSL	test_StaticLinkList.cpp	/^int Malloc_SSL(StaticLinkList space)$/;"	f
+Node	test_Node.cpp	/^typedef struct Node$/;"	s
+Node	test_Node.cpp	/^}Node;$/;"	t	typeref:struct:Node
+Node_Size	test_timer_l.cpp	/^typedef int Node_Size;$/;"	t
+OBJ	Makefile	/^OBJ             = test_timer.o$/;"	m
+OK	test_DuLinkList.cpp	4;"	d
+OK	test_Node.cpp	4;"	d
+OK	test_StaticLinkList.cpp	5;"	d
+OK	test_elemtype.cpp	6;"	d
+OK	test_sqstack.cpp	4;"	d
+PointTimeType	test_qaq_sy1.cpp	/^typedef int PointTimeType;$/;"	t
+Pop	test_sqstack.cpp	/^Status Pop(SqStack *S, SElemType *e)$/;"	f
+PosType	test_qaq_sy1.cpp	/^typedef int PosType;$/;"	t
+PrintSqStack	test_sqstack.cpp	/^void PrintSqStack(SqStack *S)$/;"	f
+Push	test_sqstack.cpp	/^Status Push(SqStack *S, SElemType e)$/;"	f
+Queue	test_template_02.cpp	/^        Queue(): head(0), tail(0){}$/;"	f	class:Queue
+Queue	test_template_02.cpp	/^        Queue(const Queue &Q): head(0), tail(0)$/;"	f	class:Queue
+Queue	test_template_02.cpp	/^template <class Type> class Queue{$/;"	c
+QueueItem	test_template_02.cpp	/^    QueueItem(const Type & t): item(t),next(0){}$/;"	f	class:QueueItem
+QueueItem	test_template_02.cpp	/^template <class Type> class QueueItem {$/;"	c
+RM	Makefile	/^RM              = rm -f$/;"	m
+Record	test_qaq_sy1.cpp	/^        Record(){}$/;"	f	class:Record
+Record	test_qaq_sy1.cpp	/^class Record{$/;"	c
+Rep	tets_str1.cpp	/^class tets_str1::Rep{ $/;"	c	class:tets_str1
+SElemType	test_sqstack.cpp	/^typedef int SElemType;$/;"	t
+Screen	test_template_05.cpp	/^    Screen():screen(hi * wid, '#'), cursor(0), height(hi), width(wid){}$/;"	f	class:Screen
+Screen	test_template_05.cpp	/^class Screen{$/;"	c
+SmallInt	test_zh.cpp	/^    SmallInt(int i=0):val(i)$/;"	f	class:SmallInt
+SmallInt	test_zh.cpp	/^class SmallInt{$/;"	c
+Sn	test_018.py	/^Sn = []$/;"	v
+Sn	test_018.py	/^Sn = reduce(lambda x,y : x+y,Sn)$/;"	v
+SqList	test_elemtype.cpp	/^}SqList;$/;"	t	typeref:struct:__anon1
+SqStack	test_sqstack.cpp	/^}SqStack;$/;"	t	typeref:struct:__anon3
+StaticLinkList	test_StaticLinkList.cpp	/^} Component,StaticLinkList[MAXSIZE];$/;"	t	typeref:struct:__anon2
+Status	test_DuLinkList.cpp	/^typedef int Status;$/;"	t
+Status	test_Node.cpp	/^typedef int Status;$/;"	t
+Status	test_StaticLinkList.cpp	/^typedef int Status;$/;"	t
+Status	test_elemtype.cpp	/^typedef int Status;$/;"	t
+Status	test_sqstack.cpp	/^typedef int Status;$/;"	t
+Subclass	test_tem2.cpp	/^class Subclass : public Base {$/;"	c
+Swap	test_class.cpp	/^   void Swap(student& s)$/;"	f	class:student
+TIME_WHEEL_SIZE	test_timer_l.cpp	8;"	d
+TRUE	test_DuLinkList.cpp	6;"	d
+TRUE	test_Node.cpp	6;"	d
+TRUE	test_StaticLinkList.cpp	7;"	d
+TRUE	test_elemtype.cpp	8;"	d
+TRUE	test_sqstack.cpp	6;"	d
+TestFunc	test_func2.cpp	/^int TestFunc(int a, char c, float f)$/;"	f
+TextBlock	test_const01.cpp	/^class TextBlock$/;"	c
+Tn	test_018.py	/^    Tn = Tn + a$/;"	v
+Tn	test_018.py	/^Tn = 0$/;"	v
+Trial	test_huffman.cpp	/^    void Trial(int i,int n)$/;"	f	class:hsf
+View	test_func1.cpp	/^class View{$/;"	c
+Widget	test_25swap.cpp	/^class Widget{$/;"	c
+WidgetImpl	test_25swap.cpp	/^    WidgetImpl(int data):a(data){}$/;"	f	class:WidgetImpl
+WidgetImpl	test_25swap.cpp	/^class WidgetImpl{$/;"	c
+a	test_007.py	/^a = [1,2,3]$/;"	v
+a	test_018.py	/^    a = a * 10$/;"	v
+a	test_018.py	/^a = int(input('a = '))$/;"	v
+a	test_024.py	/^    a = t$/;"	v
+a	test_024.py	/^a = 1.0$/;"	v
+a	test_25swap.cpp	/^    int a;$/;"	m	class:WidgetImpl
+a	test_enum.cpp	/^enum tt {a=0,b,c};$/;"	e	enum:tt
+abc	test_explicit.cpp	/^        void abc(student a)$/;"	f	class:student
+absBigInt	BigInt_test.cpp	/^BigInt_test BigInt_test::absBigInt()$/;"	f	class:BigInt_test
+addTimePiont	test_qaq_sy1.cpp	/^        void addTimePiont(PointTimeType t)$/;"	f	class:Record
+add_timer	test_timer_l.cpp	/^void add_timer(int len, func action)$/;"	f
+age	test_107.cpp	/^    unsigned int age;$/;"	m	class:student
+age	test_explicit.cpp	/^            int age;$/;"	m	class:student
+argv	test01.py	/^from sys import argv,path  #  导入特定的成员$/;"	i
+arr	test_002.py	/^arr = [1000000,600000,400000,200000,100000,0]$/;"	v
+arr	test_huffman.cpp	/^    vector<vector<int>> arr;$/;"	m	class:hsf
+arr	test_huffman.cpp	/^int arr[3]={1,2,3};$/;"	v
+b	test_007.py	/^b = a[:]$/;"	v
+b	test_024.py	/^b = 2.0$/;"	v
+b	test_enum.cpp	/^enum tt {a=0,b,c};$/;"	e	enum:tt
+base	test_virtual.cpp	/^class base{$/;"	c
+base	test_virtual2.cpp	/^    base(){$/;"	f	class:base
+base	test_virtual2.cpp	/^class base{$/;"	c
+basename	test_virtual.cpp	/^    string basename;$/;"	m	class:base
+bi	tset_using_01.cpp	/^    int bi = 16, bj = 15, bk = 23;$/;"	m	namespace:blip
+binarySearch	test_binarySearch.cpp	/^int binarySearch(vector<int>& nums, int target)$/;"	f
+binarySearch_left_first	test_binarySearch.cpp	/^int binarySearch_left_first(vector<int>& nums, int target)$/;"	f
+binarySearch_right_first	test_binarySearch.cpp	/^int binarySearch_right_first(vector<int>& nums, int target)$/;"	f
+bj	tset_using_01.cpp	/^    int bi = 16, bj = 15, bk = 23;$/;"	m	namespace:blip
+bj	tset_using_01.cpp	/^int bj = 0;$/;"	v
+bk	tset_using_01.cpp	/^    int bi = 16, bj = 15, bk = 23;$/;"	m	namespace:blip
+blip	tset_using_01.cpp	/^namespace blip {$/;"	n
+c	test_017.py	/^    c = s[i]$/;"	v
+c	test_enum.cpp	/^enum tt {a=0,b,c};$/;"	e	enum:tt
+checkTrial	test_huffman.cpp	/^    bool checkTrial(int a,int b)$/;"	f	class:hsf
+check_prime_number	test_012.py	/^def check_prime_number():$/;"	f
+clickCallback	test_func1.cpp	/^function<void(View, int, int)> clickCallback;$/;"	v
+compare	test_template_01.cpp	/^int compare(const T &v1, const T &v2)$/;"	f
+compare	test_template_03.cpp	/^int compare(const A& v1, const B& v2)$/;"	f
+compare	test_template_03.cpp	/^int compare(const T& v1, const T& v2)$/;"	f
+compareBigInt	BigInt_test.cpp	/^CompareType BigInt_test::compareBigInt(BigInt_test& t)$/;"	f	class:BigInt_test
+compute	test_zh.cpp	/^void compute(double)$/;"	f
+compute	test_zh.cpp	/^void compute(int)$/;"	f
+compute	test_zh.cpp	/^void compute(long double)$/;"	f
+cookie	test_wlpc.py	/^cookie = http.cookiejar.CookieJar()$/;"	v
+cookiejar	test_wlpc.py	/^import http.cookiejar$/;"	i
+copy_elems	test_template_02.cpp	/^void Queue<Type>::copy_elems(const Queue &orig)$/;"	f	class:Queue
+count	test_huffman.cpp	/^    static int count;$/;"	m	class:hsf
+count	test_huffman.cpp	/^int hsf::count=0;$/;"	m	class:hsf
+count	tets_str1.cpp	/^int tets_str1::count = 0;$/;"	m	class:tets_str1
+count	tets_str1.h	/^    static int count;$/;"	m	class:tets_str1
+count_	test_timer.cpp	/^    int count_;$/;"	m	class:printer
+count_	test_timer2.cpp	/^    int count_;$/;"	m	class:printer2
+count_	timer.h	/^    int count_;$/;"	m	class:timer
+cpy	test_copy.cpp	/^        void cpy()$/;"	f	class:student
+cur	test_StaticLinkList.cpp	/^    int cur;$/;"	m	struct:__anon2
+current	test_timer_l.cpp	/^    int current;$/;"	m	struct:timer_wheel
+cursor	test_template_05.cpp	/^    std::string::size_type cursor;$/;"	m	class:Screen
+data	test_DuLinkList.cpp	/^    ElemType data;$/;"	m	struct:DulNode
+data	test_Node.cpp	/^    ElemType data;$/;"	m	struct:Node
+data	test_StaticLinkList.cpp	/^    ElemType data;$/;"	m	struct:__anon2
+data	test_elemtype.cpp	/^    ElemType data[MAXSIZE];$/;"	m	struct:__anon1
+data	test_sqstack.cpp	/^    SElemType data[MAXSIZE];$/;"	m	struct:__anon3
+data	test_timer_l.cpp	/^    Elemtype data;$/;"	m	struct:time_node
+datetime	test_016.py	/^import datetime$/;"	i
+day	test_004.py	/^day = int(input('day'))$/;"	v
+derived	test_virtual.cpp	/^class derived:public base{$/;"	c
+derived	test_virtual2.cpp	/^    derived(){$/;"	f	class:derived
+derived	test_virtual2.cpp	/^class derived:public base{$/;"	c
+destroy	test_template_02.cpp	/^template <class Type> void Queue<Type>::destroy()$/;"	f	class:Queue
+digit	test_017.py	/^digit = 0 $/;"	v
+display	test_window.cpp	/^        virtual void display() const$/;"	f	class:window
+display	test_window.cpp	/^    virtual void display() const$/;"	f	class:winds
+do_time1	test_timer_l.cpp	/^void do_time1(int data)$/;"	f
+do_time2	test_timer_l.cpp	/^void do_time2(int data)$/;"	f
+do_time9	test_timer_l.cpp	/^void do_time9(int data)$/;"	f
+e	test_enum.cpp	/^enum ts {e,w,q};$/;"	e	enum:ts
+empty	test_template_02.cpp	/^        bool empty() const{return head == 0;}$/;"	f	class:Queue
+f	test_enum.cpp	/^void f(ts)$/;"	f
+f	test_enum.cpp	/^void f(tt)$/;"	f
+fib	test_006.py	/^def fib(n):$/;"	f
+fib2	test_006.py	/^def fib2(n):$/;"	f
+file_extension	test_regex.cpp	/^std::string file_extension(const std::string &path) {$/;"	f
+find_next	test_KMP.cpp	/^void find_next(vector<int>& nums,vector<int>& res)$/;"	f
+flag	BigInt_test.h	/^    bool flag;$/;"	m	class:BigInt_test
+fobj	test_template_04.cpp	/^T fobj(T a,T b)$/;"	f
+foo	test_ptr.cpp	/^void foo(std::shared_ptr<int> i)$/;"	f
+foo	test_timer.cpp	/^void foo()$/;"	f
+fref	test_template_04.cpp	/^T fref(const T& a, const T& b)$/;"	f
+front	test_template_02.cpp	/^        Type &front(){return head->item;}$/;"	f	class:Queue
+front	test_template_02.cpp	/^        const Type &front() const {return head->item;}$/;"	f	class:Queue
+func	test_timer_l.cpp	/^typedef void (*func)(int data);$/;"	t
+func1	test_boost.cpp	/^void func1()$/;"	f
+func2	test_boost.cpp	/^void func2()$/;"	f
+g	test_enum.cpp	/^void g(enum tt* pc, enum ts* pv)$/;"	f
+g	test_eq.cpp	/^void g( struct A* pa, struct B* pb)$/;"	f
+g_sec	test_timer_l.cpp	/^int g_sec = 0;$/;"	v
+getCount	tets_str1.h	/^    static int getCount() {return count;}$/;"	f	class:tets_str1
+getTimePoint	test_qaq_sy1.cpp	/^        PointTimeType getTimePoint(PosType i)$/;"	f	class:Record
+get_next	test_KMP.cpp	/^void get_next(string  T, int *next)$/;"	f
+getflag	BigInt_test.h	/^    bool getflag(){return flag;}$/;"	f	class:BigInt_test
+getvalue	BigInt_test.h	/^    string getvalue(){return value;}$/;"	f	class:BigInt_test
+grade	test_015.py	/^    grade = 'A'$/;"	v
+grade	test_015.py	/^    grade = 'B'$/;"	v
+grade	test_015.py	/^    grade = 'C'$/;"	v
+h	test_enum.cpp	/^void h()$/;"	f
+head	test_template_02.cpp	/^        QueueItem<Type> *head;$/;"	m	class:Queue
+height	test_template_05.cpp	/^    std::string::size_type height, width;$/;"	m	class:Screen
+hsf	test_huffman.cpp	/^    hsf(int a=0,int b=0):l(a),w(b)$/;"	f	class:hsf
+hsf	test_huffman.cpp	/^class hsf$/;"	c
+http	test_wlpc.py	/^import http.cookiejar$/;"	i
+i	test_002.py	/^        i = arr[idx]$/;"	v
+i	test_002.py	/^i = int(input('净利润:'))$/;"	v
+i	test_017.py	/^i = 0$/;"	v
+id	test_class.cpp	/^       int id;$/;"	m	class:student
+id	test_copy.cpp	/^        int id;$/;"	m	class:student
+id	test_explicit.cpp	/^            string id;$/;"	m	class:student
+imag	test_op.cpp	/^    double real,imag;   $/;"	m	class:Complex
+io_	test_timer.cpp	/^    boost::asio::io_service io_;$/;"	m	class:printer
+isRuning	test_boost.cpp	/^volatile bool isRuning = true;$/;"	v
+item	test_template_02.cpp	/^    Type item;$/;"	m	class:QueueItem
+j	test_003.py	/^        j = 168 \/ i;$/;"	v
+k	test_019.py	/^    k = []$/;"	v
+l	test_huffman.cpp	/^    int l;$/;"	m	class:hsf
+leap	test_004.py	/^    leap = 1$/;"	v
+leap	test_004.py	/^leap = 0$/;"	v
+length	test_const01.cpp	/^size_t TextBlock::length() const$/;"	f	class:TextBlock
+length	test_elemtype.cpp	/^    int length;$/;"	m	struct:__anon1
+lengthIsValid	test_const01.cpp	/^    mutable bool lengthIsValid;$/;"	m	class:TextBlock
+letters	test_017.py	/^letters = 0$/;"	v
+list	test_list.py	/^list = [ 'abcd', 786 , 2.23, 'runoob', 70.2 ]$/;"	v
+listNode	test_timer_l.cpp	/^typedef struct time_node* listNode;$/;"	t	typeref:struct:time_node
+m	test_003.py	/^            m = (i+j)\/2$/;"	v
+main	test_101.cpp	/^int main()$/;"	f
+main	test_103.cpp	/^int main()$/;"	f
+main	test_104.cpp	/^int main()$/;"	f
+main	test_105.cpp	/^int main()$/;"	f
+main	test_106.cpp	/^int main()$/;"	f
+main	test_107.cpp	/^int main()$/;"	f
+main	test_108.cpp	/^int main(){$/;"	f
+main	test_109.cpp	/^int main()$/;"	f
+main	test_110.cpp	/^int main()$/;"	f
+main	test_111.cpp	/^int main()$/;"	f
+main	test_112.cpp	/^int main()$/;"	f
+main	test_25swap.cpp	/^int main()$/;"	f
+main	test_DuLinkList.cpp	/^int main()$/;"	f
+main	test_Handle.cpp	/^int main()$/;"	f
+main	test_KMP.cpp	/^int main()$/;"	f
+main	test_Node.cpp	/^int main()$/;"	f
+main	test_StaticLinkList.cpp	/^int main()$/;"	f
+main	test_arr.cpp	/^int main()$/;"	f
+main	test_binarySearch.cpp	/^int main()$/;"	f
+main	test_bitset_01.cpp	/^int main()$/;"	f
+main	test_boost.cpp	/^int main()$/;"	f
+main	test_boost_001.cpp	/^int main() {$/;"	f
+main	test_c_ipc.cpp	/^int main()$/;"	f
+main	test_class.cpp	/^int main()$/;"	f
+main	test_const01.cpp	/^int main()$/;"	f
+main	test_copy.cpp	/^int main()$/;"	f
+main	test_decltype.cpp	/^int main()$/;"	f
+main	test_elemtype.cpp	/^int main()$/;"	f
+main	test_enum.cpp	/^int main()$/;"	f
+main	test_eq.cpp	/^int main()$/;"	f
+main	test_explicit.cpp	/^int main()$/;"	f
+main	test_func1.cpp	/^int main(int argc, const char* argv[])$/;"	f
+main	test_func2.cpp	/^int main()$/;"	f
+main	test_handle.cpp	/^int main()$/;"	f
+main	test_huffman.cpp	/^int main()$/;"	f
+main	test_in.cpp	/^int main()$/;"	f
+main	test_interal.cpp	/^int main()$/;"	f
+main	test_map.cpp	/^int main()$/;"	f
+main	test_move.cpp	/^int main() {$/;"	f
+main	test_move1.cpp	/^int main() {$/;"	f
+main	test_op.cpp	/^int main()$/;"	f
+main	test_primer_8_3.cpp	/^int main()$/;"	f
+main	test_primer_8_4.cpp	/^int main()$/;"	f
+main	test_primer_8_5.cpp	/^int main()$/;"	f
+main	test_primer_8_6.cpp	/^int main()$/;"	f
+main	test_ptr.cpp	/^int main()$/;"	f
+main	test_qaq_sy1.cpp	/^int main()$/;"	f
+main	test_read_fifo.c	/^int main()$/;"	f
+main	test_regex.cpp	/^int main()$/;"	f
+main	test_sqstack.cpp	/^int main()$/;"	f
+main	test_string_01.cpp	/^int main()$/;"	f
+main	test_tem1.cpp	/^int main() {$/;"	f
+main	test_tem2.cpp	/^int main() {$/;"	f
+main	test_template_01.cpp	/^int main()$/;"	f
+main	test_template_02.cpp	/^int main()$/;"	f
+main	test_template_03.cpp	/^int main()$/;"	f
+main	test_template_04.cpp	/^int main()$/;"	f
+main	test_template_05.cpp	/^int main()$/;"	f
+main	test_timer.cpp	/^int main() {$/;"	f
+main	test_timer2.cpp	/^int main() {$/;"	f
+main	test_timer_l.cpp	/^int main()$/;"	f
+main	test_virtual.cpp	/^int main()$/;"	f
+main	test_virtual2.cpp	/^int main()$/;"	f
+main	test_window.cpp	/^int main()$/;"	f
+main	test_work_01.cpp	/^int main()$/;"	f
+main	test_write_fifo.c	/^int main()$/;"	f
+main	test_yh.cpp	/^int main()$/;"	f
+main	test_zh.cpp	/^int main()$/;"	f
+main	tets_str1.cpp	/^int main()$/;"	f
+main	tset_using_01.cpp	/^int main()$/;"	f
+manip	test_zh.cpp	/^void manip(const Integral& qa)$/;"	f
+manip	test_zh.cpp	/^void manip(const SmallInt& qa)$/;"	f
+manip	tset_using_01.cpp	/^void manip()$/;"	f
+math_free_boot	test_020.py	/^def math_free_boot(a,b):$/;"	f
+matplotlib	test_m_01.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	test_m_02.py	/^import matplotlib.pyplot as plt$/;"	i
+mem	test_virtual.cpp	/^    int mem;$/;"	m	class:derived
+miyazakiBirthDate	test_016.py	/^    miyazakiBirthDate = datetime.date(1941,1,5)$/;"	v
+miyazakiBirthNextDay	test_016.py	/^    miyazakiBirthNextDay = miyazakiBirthDate + datetime.timedelta(days=1)$/;"	v
+miyazakiFirstBirthDay	test_016.py	/^    miyazakiFirstBirthDay = miyazakiBirthDate.replace(year=miyazakiBirthDate.year + 1)$/;"	v
+month	test_004.py	/^month = int(input('month'))$/;"	v
+months	test_004.py	/^months =(0,31,59,90,120,151,181,212,243,273,304,334)$/;"	v
+mseconds_num	timer.h	/^    int mseconds_num;$/;"	m	class:timer
+mu	test_m_02.py	/^mu = 0.0$/;"	v
+myD	test_009.py	/^myD = {1:'a',2:'b'}$/;"	v
+myclass	test_boost_001.cpp	/^    myclass() {}$/;"	f	class:myclass
+myclass	test_boost_001.cpp	/^    myclass(int i) {}$/;"	f	class:myclass
+myclass	test_boost_001.cpp	/^class myclass : public boost::noncopyable {$/;"	c
+n	test_003.py	/^            n = (i-j)\/2$/;"	v
+n	test_018.py	/^n = int(input('n = '))$/;"	v
+n	test_019.py	/^    n = -1$/;"	v
+name	test_class.cpp	/^       string name;$/;"	m	class:student
+name	test_copy.cpp	/^        string name;$/;"	m	class:student
+name	test_explicit.cpp	/^            string name;$/;"	m	class:student
+next	test_DuLinkList.cpp	/^    struct DuLNode *next;   \/\/直接后驱指针$/;"	m	struct:DulNode	typeref:struct:DulNode::DuLNode
+next	test_Node.cpp	/^    struct Node *next;$/;"	m	struct:Node	typeref:struct:Node::Node
+next	test_template_02.cpp	/^    QueueItem *next;$/;"	m	class:QueueItem
+next	test_timer_l.cpp	/^    listNode next;$/;"	m	struct:time_node
+np	test_m_02.py	/^import numpy as np$/;"	i
+num	test_024.py	/^num = 0$/;"	v
+onClick	test_func1.cpp	/^    void onClick(int x, int y)$/;"	f	class:View
+opener	test_wlpc.py	/^opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cookie))$/;"	v
+operator *	test_Handle.cpp	/^inline T& Handle<T>::operator*(){$/;"	f	class:Handle
+operator *	test_Handle.cpp	/^inline const T& Handle<T>::operator*() const{$/;"	f	class:Handle
+operator *=	BigInt_test.cpp	/^BigInt_test BigInt_test::operator*=(BigInt_test& t)$/;"	f	class:BigInt_test
+operator ++	test_enum.cpp	/^tt operator++(tt s)$/;"	f
+operator +=	BigInt_test.cpp	/^BigInt_test BigInt_test::operator+=(BigInt_test& t)$/;"	f	class:BigInt_test
+operator -=	BigInt_test.cpp	/^BigInt_test BigInt_test::operator-=(BigInt_test& t)$/;"	f	class:BigInt_test
+operator ->	test_Handle.cpp	/^inline T* Handle<T>::operator->(){$/;"	f	class:Handle
+operator ->	test_Handle.cpp	/^inline const T* Handle<T>::operator->() const{$/;"	f	class:Handle
+operator <<	test_Handle.cpp	/^        friend ostream& operator<<(ostream &os, const Handle<T> &h)$/;"	f	class:Handle
+operator <<	test_op.cpp	/^ostream & operator<<( ostream & os,const Complex & c )$/;"	f
+operator <<	test_template_02.cpp	/^ostream& operator<<(ostream &os, const Queue<Type> &q)$/;"	f
+operator =	BigInt_test.cpp	/^BigInt_test& BigInt_test::operator=(BigInt_test& t)$/;"	f	class:BigInt_test
+operator =	test_25swap.cpp	/^    Widget& operator=(const Widget& rhs)$/;"	f	class:Widget
+operator =	test_Handle.cpp	/^inline Handle<T>& Handle<T>::operator=(const Handle &rhs)$/;"	f	class:Handle
+operator =	test_template_02.cpp	/^Queue<Type>&  Queue<Type>::operator=(const Queue &temp)$/;"	f	class:Queue
+operator >>	test_op.cpp	/^istream & operator>>( istream & is,Complex & c )$/;"	f
+operator []	test_const01.cpp	/^    char& operator[](size_t position)$/;"	f	class:TextBlock
+operator []	test_const01.cpp	/^    const char& operator[](size_t position) const$/;"	f	class:TextBlock
+operator double	test_zh.cpp	/^    operator double() const$/;"	f	class:Integral
+operator double	test_zh.cpp	/^    operator double() const$/;"	f	class:SmallInt
+operator int	test_zh.cpp	/^    operator int() const $/;"	f	class:Integral
+operator int	test_zh.cpp	/^    operator int() const $/;"	f	class:SmallInt
+others	test_017.py	/^others = 0$/;"	v
+p	tets_str1.h	/^    Rep* p;$/;"	m	class:tets_str1
+pImpl	test_25swap.cpp	/^    WidgetImpl* pImpl;$/;"	m	class:Widget
+pText	test_const01.cpp	/^    char* pText;$/;"	m	class:TextBlock
+path	test01.py	/^from sys import argv,path  #  导入特定的成员$/;"	i
+plt	test_m_01.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	test_m_02.py	/^import matplotlib.pyplot as plt$/;"	i
+pointer	test_move1.cpp	/^        int *pointer;$/;"	m	class:A
+pop	test_template_02.cpp	/^template<class Type> void Queue<Type>::pop()$/;"	f	class:Queue
+powerSet	test_huffman.cpp	/^void powerSet(int i, int n)$/;"	f
+print	test_25swap.cpp	/^    void print()$/;"	f	class:WidgetImpl
+print	test_copy.cpp	/^        void print()$/;"	f	class:student
+print	test_huffman.cpp	/^    void print()$/;"	f	class:hsf
+print	test_huffman.cpp	/^void print()$/;"	f
+print	test_primer_8_5.cpp	/^void print()$/;"	f
+print	test_primer_8_6.cpp	/^void print()$/;"	f
+print	test_timer.cpp	/^    void print() {$/;"	f	class:printer
+print	test_timer2.cpp	/^    void print() {$/;"	f	class:printer2
+print	test_virtual.cpp	/^    virtual void print(string str="aaa") {cout<<"base: "<<str<<endl;}$/;"	f	class:base
+print	test_virtual.cpp	/^    virtual void print(string str="bbb") {base::print(); cout<<"derived: "<<str<<endl;}$/;"	f	class:derived
+print	test_virtual2.cpp	/^    virtual void print()$/;"	f	class:base
+print	timer.h	/^    void print(){$/;"	f	class:timer
+printFlag	test_binarySearch.cpp	/^void printFlag(vector<int>& nums,int left, int right)$/;"	f
+print_count	test_huffman.cpp	/^    static void print_count()$/;"	f	class:hsf
+print_mul_table	test_008.py	/^def print_mul_table():$/;"	f
+printer	test_timer.cpp	/^    printer()$/;"	f	class:printer
+printer	test_timer.cpp	/^class printer {$/;"	c
+printer2	test_timer2.cpp	/^    printer2(boost::asio::io_service &io)$/;"	f	class:printer2
+printer2	test_timer2.cpp	/^class printer2 {$/;"	c
+printf1	test_tem1.cpp	/^void printf1(T value, Ts... args) {$/;"	f
+printf1	test_tem1.cpp	/^void printf1(T0 value) {$/;"	f
+printf2	test_tem1.cpp	/^void printf2(T0 t0, T... t) {$/;"	f
+printf3	test_tem1.cpp	/^auto printf3(T value, Ts... args) {$/;"	f
+printwindowsdisplay	test_window.cpp	/^void printwindowsdisplay(window w)$/;"	f
+printwindowsdisplay_1	test_window.cpp	/^void printwindowsdisplay_1(window& w)$/;"	f
+printwindowsdisplay_2	test_window.cpp	/^void printwindowsdisplay_2(const window& w)$/;"	f
+prior	test_DuLinkList.cpp	/^    struct DuLNode *prior;  \/\/直接前驱指针$/;"	m	struct:DulNode	typeref:struct:DulNode::DuLNode
+prior	test_Node.cpp	/^    struct Node *prior;$/;"	m	struct:Node	typeref:struct:Node::Node
+proc	test_timer_l.cpp	/^    func proc;$/;"	m	struct:time_node
+process	test_primer_8_5.cpp	/^void process(string& s)$/;"	f
+ptr	test_Handle.cpp	/^        T* ptr;$/;"	m	class:Handle
+push	test_template_02.cpp	/^void Queue<Type>::push(const Type &val)$/;"	f	class:Queue
+q	test_enum.cpp	/^enum ts {e,w,q};$/;"	e	enum:ts
+qaq	test_106.cpp	/^void qaq(std::string &s)$/;"	f
+qaq	test_107.cpp	/^    bool qaq(student &s) const$/;"	f	class:student
+qaq1	test_106.cpp	/^void qaq1(const std::string &s)$/;"	f
+r	test_002.py	/^r = 0$/;"	v
+rat	test_002.py	/^rat = [0.01,0.015,0.03,0.05,0.075,0.1]$/;"	v
+read	test_primer_8_3.cpp	/^istream& read(istream &str)$/;"	f
+read	test_primer_8_5.cpp	/^void read(string& s)$/;"	f
+readStr	test_string_01.cpp	/^bool readStr(const string& s1,const string& s2)$/;"	f
+real	test_op.cpp	/^    double real,imag;   $/;"	m	class:Complex
+reduce	test_018.py	/^from functools import reduce$/;"	i
+reduceNum	test_014.py	/^def reduceNum(n):$/;"	f
+rem_ref	test_Handle.cpp	/^        void rem_ref(){$/;"	f	class:Handle
+request	test_wlpc.py	/^import urllib.request$/;"	i
+request	test_wlpc.py	/^request = urllib.request.Request(url)$/;"	v
+response1	test_wlpc.py	/^response1 = urllib.request.urlopen(url)$/;"	v
+response2	test_wlpc.py	/^response2 = urllib.request.urlopen(request)$/;"	v
+response3	test_wlpc.py	/^response3 = urllib.request.urlopen(url)$/;"	v
+ret	test_huffman.cpp	/^vector<int> ret;$/;"	v
+return_rvalue	test_move1.cpp	/^A return_rvalue(bool test) {$/;"	f
+rotation	test_timer_l.cpp	/^    Node_Size rotation;$/;"	m	struct:time_node
+run	test_timer.cpp	/^    void run() {$/;"	f	class:printer
+s	test_017.py	/^s = input('请输入一个字符串:\\n')$/;"	v
+s	test_019.py	/^    s = j$/;"	v
+samples	test_m_02.py	/^samples = np.random.normal(loc=mu, scale=sigma, size=1000)$/;"	v
+score	test_015.py	/^score = int(input('输入分数:\\n'))$/;"	v
+screen	test_template_05.cpp	/^    std::string screen;$/;"	m	class:Screen
+setflag	BigInt_test.h	/^    void setflag(bool t){flag=t;}$/;"	f	class:BigInt_test
+setvalue	BigInt_test.h	/^    void setvalue(string s){value = s;}$/;"	f	class:BigInt_test
+show	test_107.cpp	/^    void show()$/;"	f	class:student
+sigma	test_m_02.py	/^sigma = 2.0$/;"	v
+slot	test_timer_l.cpp	/^    listNode slot[TIME_WHEEL_SIZE];$/;"	m	struct:timer_wheel
+sort	test_sort_xr.cpp	/^int sort(vector<int>& arr,std::function<bool(vector<int>&)> less=[&](int &a,int& b)->bool{return a<b;})$/;"	f
+space	test_017.py	/^space = 0$/;"	v
+spiral	test_ttt01.py	/^spiral = turtle.Turtle()$/;"	v
+sqrt	test_012.py	/^    from math import sqrt$/;"	i
+start	test_timer.cpp	/^    void start() {$/;"	f	class:printer
+std	test_25swap.cpp	/^namespace std {$/;"	n
+stdout	test_012.py	/^    from sys import stdout$/;"	i
+stdout	test_019.py	/^from sys import stdout$/;"	i
+stdout	test_023.py	/^from sys import stdout$/;"	i
+str	test_string.py	/^str = 'Runoob'$/;"	v
+string	test_017.py	/^import string$/;"	i
+student	test_107.cpp	/^    student(string _ID="",unsigned int _age=0):ID(_ID),age(_age)$/;"	f	class:student
+student	test_107.cpp	/^class student{$/;"	c
+student	test_class.cpp	/^   student(const student& s):id(1), name("")$/;"	f	class:student
+student	test_class.cpp	/^   student(int ID=0, string Name=""):id(ID), name(Name)$/;"	f	class:student
+student	test_class.cpp	/^class student{$/;"	c
+student	test_copy.cpp	/^        student(int ID = 0, string str = ""):id(ID), name(str)$/;"	f	class:student
+student	test_copy.cpp	/^class student{$/;"	c
+student	test_explicit.cpp	/^        explicit student(const string &str=""):name(str), id(""), age(0)$/;"	f	class:student
+student	test_explicit.cpp	/^class student{$/;"	c
+student	test_explicit.cpp	/^student::student(istream &is)$/;"	f	class:student
+sum	test_004.py	/^    sum = months[month-1]$/;"	v
+swap	test_25swap.cpp	/^        void swap<Widget>(Widget& a, Widget& b)$/;"	f	namespace:std
+swap	test_25swap.cpp	/^    void swap(Widget& other)$/;"	f	class:Widget
+sxh_number	test_013.py	/^def sxh_number():$/;"	f
+sys	test01.py	/^import sys$/;"	i
+t	test_024.py	/^    t = b$/;"	v
+tail	test_template_02.cpp	/^        QueueItem<Type> *tail;$/;"	m	class:Queue
+test	test_KMP.cpp	/^void test()$/;"	f
+test	test_Node.cpp	/^void test()$/;"	f
+test	test_StaticLinkList.cpp	/^void test()$/;"	f
+test	test_enum.cpp	/^void test()$/;"	f
+test	test_sqstack.cpp	/^void test()$/;"	f
+test	test_timer_l.cpp	/^void test()$/;"	f
+test	test_virtual.cpp	/^void test()$/;"	f
+test	test_virtual2.cpp	/^void test(){$/;"	f
+test01	test_elemtype.cpp	/^void test01()$/;"	f
+test02	test_KMP.cpp	/^void test02()$/;"	f
+test02	test_Node.cpp	/^void test02()$/;"	f
+test1	test_bitset_01.cpp	/^void test1()$/;"	f
+test1	test_class.cpp	/^void test1()$/;"	f
+test1	test_copy.cpp	/^void test1()$/;"	f
+test1	test_primer_8_4.cpp	/^void test1()$/;"	f
+test1	test_template_01.cpp	/^void test1()$/;"	f
+test1	test_template_03.cpp	/^void test1()$/;"	f
+test1	test_template_04.cpp	/^void test1()$/;"	f
+test1	test_zh.cpp	/^void test1()$/;"	f
+test2	test_primer_8_4.cpp	/^void test2()$/;"	f
+test2	test_primer_8_6.cpp	/^void test2()$/;"	f
+test2	test_template_01.cpp	/^void test2()$/;"	f
+test2	test_template_03.cpp	/^void test2()$/;"	f
+test2	test_zh.cpp	/^void test2()$/;"	f
+test3	test_zh.cpp	/^void test3()$/;"	f
+test4	test_zh.cpp	/^void test4()$/;"	f
+tets_str1	tets_str1.h	/^    tets_str1() {}$/;"	f	class:tets_str1
+tets_str1	tets_str1.h	/^class tets_str1$/;"	c
+textLength	test_const01.cpp	/^    mutable size_t textLength;$/;"	m	class:TextBlock
+tick	test_timer_l.cpp	/^void tick(int signo)$/;"	f
+time	test_009.py	/^import time$/;"	i
+time	test_010.py	/^import time$/;"	i
+time	test_ok_he.py	/^import time$/;"	i
+time	test_ttle.py	/^import time$/;"	i
+timeVec	test_qaq_sy1.cpp	/^        vector<PointTimeType> timeVec;$/;"	m	class:Record
+time_node	test_timer_l.cpp	/^struct time_node{$/;"	s
+timer	test_timer_l.cpp	/^struct timer_wheel timer = {{0}, 0};$/;"	v	typeref:struct:timer_wheel
+timer	timer.h	/^    timer(boost::asio::io_service& io, int ms = 500)$/;"	f	class:timer
+timer	timer.h	/^class timer$/;"	c
+timer_	test_timer.cpp	/^    boost::asio::steady_timer timer_;$/;"	m	class:printer
+timer_	test_timer2.cpp	/^    boost::asio::steady_timer timer_;$/;"	m	class:printer2
+timer_	timer.h	/^    boost::asio::steady_timer timer_;$/;"	m	class:timer
+timer_wheel	test_timer_l.cpp	/^struct timer_wheel{$/;"	s
+tinylist	test_list.py	/^tinylist = [123, 'runoob']$/;"	v
+top	test_sqstack.cpp	/^    int top;$/;"	m	struct:__anon3
+ts	test_enum.cpp	/^enum ts {e,w,q};$/;"	g
+tt	test_enum.cpp	/^enum tt {a=0,b,c};$/;"	g
+tt_s	test_011.py	/^def tt_s():$/;"	f
+turtle	test_01.py	/^import turtle$/;"	i
+turtle	test_ok_he.py	/^import turtle$/;"	i
+turtle	test_ttle.py	/^import turtle$/;"	i
+turtle	test_ttt01.py	/^import turtle$/;"	i
+turtle	test_ttt02.py	/^import turtle$/;"	i
+url	test_wlpc.py	/^url = "http:\/\/www.baidu.com"$/;"	v
+urllib	test_wlpc.py	/^import urllib.request$/;"	i
+use	test_Handle.cpp	/^        size_t *use;$/;"	m	class:Handle
+val	test_zh.cpp	/^    int val;$/;"	m	class:Integral
+val	test_zh.cpp	/^    int val;$/;"	m	class:SmallInt
+value	BigInt_test.h	/^    string value;$/;"	m	class:BigInt_test
+value1	test_tem2.cpp	/^    int value1;$/;"	m	class:Base
+value2	test_tem2.cpp	/^    int value2;$/;"	m	class:Base
+w	test_enum.cpp	/^enum ts {e,w,q};$/;"	e	enum:ts
+w	test_huffman.cpp	/^    int w;$/;"	m	class:hsf
+width	test_template_05.cpp	/^    std::string::size_type height, width;$/;"	m	class:Screen
+window	test_window.cpp	/^class window{$/;"	c
+winds	test_window.cpp	/^class winds: public window$/;"	c
+x	test_003.py	/^            x = n*n-100$/;"	v
+x	test_eq.cpp	/^struct A{int x,y;};$/;"	m	struct:A
+x	test_eq.cpp	/^struct B{int x,y;};$/;"	m	struct:B
+x1	test_021.py	/^    x1 = (x2 + 1) * 2$/;"	v
+x2	test_021.py	/^    x2 = x1$/;"	v
+x2	test_021.py	/^x2 = 1$/;"	v
+y	test_eq.cpp	/^struct A{int x,y;};$/;"	m	struct:A
+y	test_eq.cpp	/^struct B{int x,y;};$/;"	m	struct:B
+year	test_004.py	/^year = int(input('year:\\n'))$/;"	v
+~A	test_move1.cpp	/^        ~A(){ $/;"	f	class:A
+~BigInt_test	BigInt_test.h	/^    ~BigInt_test() {}$/;"	f	class:BigInt_test
+~Handle	test_Handle.cpp	/^        ~Handle() {rem_ref();}$/;"	f	class:Handle
+~Queue	test_template_02.cpp	/^        ~Queue(){destroy();}$/;"	f	class:Queue
+~Record	test_qaq_sy1.cpp	/^        ~Record(){}$/;"	f	class:Record
+~base	test_virtual2.cpp	/^    virtual ~base()$/;"	f	class:base
+~derived	test_virtual2.cpp	/^    virtual ~derived(){$/;"	f	class:derived
+~hsf	test_huffman.cpp	/^    ~hsf(){}$/;"	f	class:hsf
+~printer	test_timer.cpp	/^    ~printer() {$/;"	f	class:printer
+~printer2	test_timer2.cpp	/^    ~printer2() {$/;"	f	class:printer2
+~tets_str1	tets_str1.h	/^    ~tets_str1() {}$/;"	f	class:tets_str1
+~timer	timer.h	/^    ~timer() {}$/;"	f	class:timer

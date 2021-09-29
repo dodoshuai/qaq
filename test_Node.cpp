@@ -12,6 +12,7 @@ typedef int Status;
 typedef struct Node
 {
     ElemType data;
+    struct Node *prior;
     struct Node *next;
 }Node;
 typedef struct Node *LinkList;
@@ -20,6 +21,7 @@ typedef struct Node *LinkList;
 Status ListInit(LinkList L)
 {
     cout<<"ListInit"<<endl;
+    L->prior = nullptr;
     L->next = nullptr;
     L->data = 0;
     return OK;
@@ -31,7 +33,7 @@ Status GetElem(LinkList L, int i, ElemType *e)
     LinkList p;
     p = L->next;
     j = 1;
-    while(p && j < i)
+    while(p && j < i && (p != L->next || j==1))
     {
         p = p ->next;
         ++j;
@@ -48,9 +50,10 @@ Status ListInsert(LinkList *L, int i, ElemType e)
     cout<<"ListInsert"<<endl;
     int j;
     LinkList p,s;
-    p = *L;//为什莫要传入指针的指针，但用指针赋值不行吗
+    p = *L;
     j = 1;
-    while(p && j < i)
+    
+    while(p && j < i && ( p != (*L)->next || j == 2 ))
     {
         p = p->next;
         ++j;
@@ -59,7 +62,11 @@ Status ListInsert(LinkList *L, int i, ElemType e)
         return ERROR;
     s = (LinkList) malloc(sizeof(Node));
     s->data = e;
+    //先将添加的节点的前驱和后驱结点赋值
+    //接着对前驱的后驱结点进行赋值，对后驱的前驱结点指针进行赋值
+    s->prior = p;
     s->next = p->next;
+    s->next->prior = s;
     p->next = s;
     return OK;
 }
@@ -70,7 +77,7 @@ Status ListDelete(LinkList *L ,int i, ElemType *e)
     LinkList p,q;
     p = *L;
     j = 1;
-    while(p->next && j < i)
+    while(p && j < i && ( p != (*L)->next || j == 2 ))
     {
         p = p->next;
         ++j;
@@ -79,6 +86,7 @@ Status ListDelete(LinkList *L ,int i, ElemType *e)
         return ERROR;
     q = p->next;
     p ->next = q->next;
+    p ->next->prior = p;
     *e = q->data;
     free(q);
     return OK;
@@ -89,7 +97,7 @@ Status ListPrint(LinkList *L)
     LinkList p;
     p = *L;
     int len = 0;
-    while(p)
+    while(p && ( p != (*L) || len == 0 ))
     {
         cout<<p->data<<endl;
         p = p->next;
@@ -103,7 +111,7 @@ Status ListLength(LinkList *L,int *len)
 {
     LinkList p=*L;
     int countNum = 0;
-    while(p)
+    while(p && (p != (*L) || countNum==0))
     {
         ++(countNum);
         p = p->next;
@@ -124,7 +132,17 @@ void CreateListHead(LinkList *L, int n)
     {
         p = (LinkList) malloc(sizeof(Node));
         p->data = rand()%100 + 1;
-        p->next = (*L)->next;
+        if((*L)->next == NULL)
+        {
+            p->next = p;
+            p->prior = p;
+        }
+        else
+        {
+            p->next = (*L)->next;
+            p->prior = (*L)->next->prior;
+            (*L)->next->prior = p;
+        }
         (*L)->next = p;
     }
 }
@@ -142,23 +160,44 @@ void CreateListTail(LinkList *L, int n)
     {
         p = (LinkList) malloc(sizeof(Node));
         p->data = rand()%100 + 1;
+        if(q == *L)
+        {
+            p->next = p;
+            p->prior = p;
+        }
+        else
+        {
+            p->next = q->next;
+            p->prior = q;
+            p->next->prior = p;
+        }
         q->next = p;
         q = p;
     }
-    q->next = NULL;
 }
 //整链表删除
 Status ClearList(LinkList *L)
 {
     LinkList p,q;
     p = (*L) ->next;
+    int count = 0;
     while(p)
     {
-        q = p ->next;
-        free(p);
-        p = q;
+        if(p == p->prior)
+        {
+            (*L)->next = NULL;
+            free(p);
+            p = NULL;
+        }
+        else
+        {
+            q = p ->next;
+            q->prior = p->prior;
+            (*L)->next = q;
+            free(p);
+            p = q;
+        }
     }
-    (*L)->next = NULL;
     return OK;
 }
 void test()
