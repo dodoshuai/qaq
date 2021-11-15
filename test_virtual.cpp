@@ -42,17 +42,28 @@ void test()
 }
 class A{
 public:
+    A()
+    {
+        fun();
+        this->fun();
+    }
     virtual ~A()
     {
         cout<<"print A"<<endl;   
     }
+    void fun(string str="aaa") {cout<<"A: "<<str<<endl;}
 };
 class B : public A{
     public:
+        B(){
+            fun();
+            this->fun();
+        }
         ~B()
         {
             cout<<"print B"<<endl;
         }
+    void fun(string str="bbb") {cout<<"B: "<<str<<endl;}
 };
 void test2()
 {
@@ -62,10 +73,17 @@ void test2()
     cout<<"------------------"<<endl;
     delete b1;
 }
+void test3()
+{
+    B b;
+    cout<<"--------------"<<endl;
+    b.fun();
+}
 int main()
 {
     //test();
-    test2();
+    //test2();
+    test3();
     //std::cout << "Hello world" << std::endl;
     return 0;
 }
